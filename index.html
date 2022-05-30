@@ -110,6 +110,89 @@
       </tr>
 
 
+       <tr>
+        <td>
+          <br><h2>A-RMA Method and Results: </h2><br><br>
+            <img src="method-figure.jpeg" alt="a-rma" style="width:40%">
+            <video autoplay loop muted src="multiple-videos-lr.mp4" width="560"></video> <br>
+            The first two phases are the same as <a href="https://ashish-kmr.github.io/rma-legged-robots/">RMA</a>. In the first phase, the base policy takes as input the current state, previous action and the extrinsics vector which contains a compressed version of the privileged environmental factors. The base policy is trained in simulation using model-free RL. In the second phase, the adaptation module is trained to predict the extrinsic from the history of state and actions via supervised learning with on-policy data. We additionally add a third phase in which the base policy is fine-tuned again with PPO while keeping the adaptation module fixed, to account for imperfect estimation of extrinsics. We found this to be critical for reliable performance in the real world.
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center>
+            <h1><br>Related Line of work</h1>
+                  <br>
+
+
+          <center>
+            <table width="100%">
+              <tr>
+                <td width="100%">
+                <font size = 4>
+                  <div style="float:left;margin-right:30px;">
+                  <video autoplay loop muted src="vege-2.mp4" width="240"></video>
+                  </div>
+                  RMA: Rapid Motor Adaptation for Legged Robots
+                  Ashish Kumar, Zipeng Fu, Deepak Pathak, Jitendra Malik<br/>
+                  RSS 2021 <br/> <br/>
+                  <a href="https://arxiv.org/abs/2107.04034">Pdf</a> |
+                  <a href="https://www.youtube.com/watch?v=nBy1piJrq1A">Video</a> |
+                  <a href="https://ashish-kmr.github.io/rma-legged-robots/">Project Page</a>
+                </font>
+
+              </tr>
+            </table>
+          </center> <br>
+
+
+         <center>
+            <table width="100%">
+              <tr>
+                <td width="100%">
+                <font size = 4>
+                  <div style="float:left;margin-right:30px;">
+                  <video autoplay loop muted src="gait-clip.mp4" width="240"></video>
+                  </div>
+                  Minimizing Energy Consumption Leads to the Emergence of Gaits in Legged Robots <br/>
+                  Zipeng Fu, Ashish Kumar, Jitendra Malik, Deepak Pathak <br/>
+                  CoRL 2021 <br/> <br/>
+                  <a href="https://arxiv.org/abs/2111.01674">Pdf</a> |
+                  <a href="https://www.youtube.com/watch?v=OQN5W2IAb9k">Video</a> |
+                  <a href="https://energy-locomotion.github.io/">Project Page</a>
+
+                </font>
+
+              </tr>
+            </table>
+          </center>
+
+          <center>
+            <table width="100%">
+              <tr>
+                <td width="100%">
+                <font size = 4>
+                  <div style="float:left;margin-right:30px;">
+                  <br><br>
+                  <video autoplay loop muted src="nav-video.mp4" width="240"></video>
+                  </div>
+                  <br><br>
+                  Coupling Vision and Proprioception for Navigation of Legged Robots <br/>
+                  Zipeng Fu*, Ashish Kumar*, Ananye Agarwal, Haozhi Qi, Jitendra Malik, Deepak Pathak <br/>
+                  <br/> <br/>
+                  <a href="https://navigation-locomotion.github.io/camera-ready/resources/navigation-locomotion.pdf">Pdf</a> |
+                  <a href="https://youtu.be/sZVvutQUAQ4">Video</a> |
+                  <a href=" https://navigation-locomotion.github.io/camera-ready/">Project Page</a>
+
+                </font>
+
+              </tr>
+            </table>
+          </center>
+
+
+
     </table>
   </center>
   </center>
